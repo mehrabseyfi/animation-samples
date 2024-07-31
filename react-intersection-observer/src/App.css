@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App, .separate-container {
+  height: 1500px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.move {
+  transform: translate3d(100px, 0, 0);
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 1s ease-in-out;
+
+  &.one {
+    background-color: #ff4a4a;
+  }
+
+  &.two {
+    background-color: #b7ff5e;
+  }
+
+  &.three {
+    background-color: #b877ff;
+  }
+}
